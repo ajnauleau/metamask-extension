@@ -55,7 +55,12 @@
         {
           "presets": [
             "es2015",
-            "stage-0"
+            "stage-0",
+	    "react",
+	    "@babel/preset-env",
+            "targets": {
+              "browsers": [chrome 46]
+             }
           ]
         }
       ],
@@ -203,6 +208,7 @@
     "@storybook/addon-info": "^3.4.2",
     "@storybook/addon-knobs": "^3.4.2",
     "@storybook/react": "^3.4.2",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.24.1",
     "babel-eslint": "^8.0.0",
     "babel-plugin-transform-async-to-generator": "^6.24.1",
@@ -273,7 +279,7 @@
     "mocha-jsdom": "^1.1.0",
     "mocha-sinon": "^2.0.0",
     "nock": "^9.0.14",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.9.2",
     "nsp": "^3.2.1",
     "nyc": "^13.0.0",
     "open": "0.0.5",
