@@ -53,24 +53,15 @@
       [
         "babelify",
         {
-          "presets": [
-            "es2015",
-            "stage-0",
-	    "react",
-	    "@babel/preset-env",
-            "targets": {
-              "browsers": [chrome 46]
-             }
-          ]
-	  "presets": [ 
-	    "stage-0",
-            ["env", {
+	  "presets": [["env", {
               "targets": {
                 "chrome": "46"
-               }
-            }]
-          ],
-	  "plugins": [
+               }, 
+               "debug": true 
+           }],
+            "react", 
+            "stage-0"],
+          "plugins": [
             "babel-plugin-transform-class-properties"
   	  ]
         }
