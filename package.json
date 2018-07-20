@@ -62,7 +62,9 @@
             "react", 
             "stage-0"],
           "plugins": [
-            "babel-plugin-transform-class-properties"
+            "transform-runtime",
+            "transform-async-to-generator",
+	    "transform-class-properties" 
   	  ]
         }
       ],

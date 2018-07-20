@@ -1,11 +1,4 @@
 {
-  "presets": [["env", {
-      "targets": {
-        "chrome": "46"
-      },
-      "debug": true
-      }],
-     "react",
-     "stage-0"],
-  "plugins": ["transform-runtime", "transform-async-to-generator"]
+"presets": [["env", { "targets": { "chrome": 46 }, "debug": true }], "react", "stage-0"],
+"plugins": ["transform-runtime", "transform-async-to-generator", "transform-class-properties"]
 }
