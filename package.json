@@ -53,19 +53,24 @@
       [
         "babelify",
         {
-	  "presets": [["env", {
-              "targets": {
-                "chrome": "46"
-               },
-               "debug": true
-           }],
+          "presets": [
+            [
+              "env",
+              {
+                "targets": {
+                  "chrome": "46"
+                },
+                "debug": true
+              }
+            ],
             "react",
-            "stage-0"],
+            "stage-0"
+          ],
           "plugins": [
             "transform-runtime",
             "transform-async-to-generator",
-	    "transform-class-properties"
-  	  ]
+            "transform-class-properties"
+          ]
         }
       ],
       "reactify",
